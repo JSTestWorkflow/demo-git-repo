@@ -5,6 +5,8 @@ jobs:
     runs-on: macos-11
     steps: 
       - name: message
-        run: echo "Hello World"
+        shell: pwsh
+        run: |
+          gci env:*  |  sort-object name
     
   
